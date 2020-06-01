@@ -1,0 +1,58 @@
+﻿@model IEnumerable<MVCMontadoraPP.Models.Compra>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Pedidos</h1>
+
+<p>
+    <a asp-action="Create">Fazer Novo Pedido</a>
+</p>
+<h3>Histórico de Pedidos</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Peca_Compra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fornecedor_Compra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantidade_Compra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorUnitatio_Compra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorTotal_Compra)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Peca_Compra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fornecedor_Compra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantidade_Compra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorUnitatio_Compra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorTotal_Compra)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

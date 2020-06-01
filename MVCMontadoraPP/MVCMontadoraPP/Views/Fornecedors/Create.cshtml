@@ -1,0 +1,102 @@
+﻿@model MVCMontadoraPP.Models.Fornecedor
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Fornecedor</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome_Fornecedor" class="control-label"></label>
+                <input asp-for="Nome_Fornecedor" class="form-control" />
+                <span asp-validation-for="Nome_Fornecedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CNPJ_Fornecedor" class="control-label"></label>
+                <input asp-for="CNPJ_Fornecedor" class="form-control" />
+                <span asp-validation-for="CNPJ_Fornecedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contato_Fornecedor" class="control-label"></label>
+                <input asp-for="Contato_Fornecedor" class="form-control" />
+                <span asp-validation-for="Contato_Fornecedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email_Fornecedor" class="control-label"></label>
+                <input asp-for="Email_Fornecedor" class="form-control" />
+                <span asp-validation-for="Email_Fornecedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CEP_Fornecedor" class="control-label"></label>
+                <input asp-for="CEP_Fornecedor" class="form-control" />
+                <span asp-validation-for="CEP_Fornecedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rua_Fornecedor" class="control-label"></label>
+                <input asp-for="Rua_Fornecedor" class="form-control" />
+                <span asp-validation-for="Rua_Fornecedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bairro_Fornecedor" class="control-label"></label>
+                <input asp-for="Bairro_Fornecedor" class="form-control" />
+                <span asp-validation-for="Bairro_Fornecedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cidade_Fornecedor" class="control-label"></label>
+                <input asp-for="Cidade_Fornecedor" class="form-control" />
+                <span asp-validation-for="Cidade_Fornecedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estado_Fornecedor" class="control-label"></label>
+                <select asp-for="Estado_Fornecedor" class="form-control">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </select>
+                <span asp-validation-for="Estado_Fornecedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
