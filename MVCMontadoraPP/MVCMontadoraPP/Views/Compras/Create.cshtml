@@ -21,10 +21,13 @@
                 <label asp-for="Fornecedor_Compra" class="control-label"></label>
                 <input asp-for="Fornecedor_Compra" class="form-control" />
                 <span asp-validation-for="Fornecedor_Compra" class="text-danger"></span>
+                <p>
+                    @ViewBag.Fornecedor
+                </p>
             </div>
             <div class="form-group">
                 <label asp-for="Quantidade_Compra" class="control-label"></label>
-                <input asp-for="Quantidade_Compra" class="form-control" min="0"/>
+                <input asp-for="Quantidade_Compra" class="form-control" id="Quantidade" min="0"/>
                 <span asp-validation-for="Quantidade_Compra" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -34,7 +37,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="ValorTotal_Compra" class="control-label"></label>
-                <input asp-for="ValorTotal_Compra" class="form-control" onchange="Total()"/>
+                <input asp-for="ValorTotal_Compra" type="number" class="form-control" id="ValorTotal" value="0" />
                 <span asp-validation-for="ValorTotal_Compra" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -43,9 +46,11 @@
         </form>
     </div>
 </div>
-<script>
+<script type="text/javascript">
+        var valUnit = document.getElementById("Valor").value;
+        var valQnt = document.getElementById("Quantidade").value;
     function Total() {
-        total
+        document.getElementById("ValorTotal").innerHTML = valUnit * valQnt;
     }
 </script>
 <div>

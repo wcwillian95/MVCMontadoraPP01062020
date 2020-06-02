@@ -46,18 +46,7 @@ namespace MVCMontadoraPP.Controllers
         // GET: Compras/Create
         public IActionResult Create()
         {
-            //Fornecedor fornecedor = new Fornecedor();
-            //string[] nomes = new string[fornecedor.Nome_Fornecedor.Count()];
-            //foreach(var item in fornecedor.Nome_Fornecedor)
-            //{
-
-            //    for (int i = 0; i < fornecedor.Nome_Fornecedor.Count(); i++)
-            //    {
-            //        nomes[i] = item.ToString();
-            //    }
-            //}
-            //ViewBag.Nomes = nomes[fornecedor.Nome_Fornecedor.Count()];
-           
+            ViewBag.Fornecedor = _context.Fornecedor.ToList();
             return View();
         }
 
