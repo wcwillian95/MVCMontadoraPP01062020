@@ -54,8 +54,9 @@ namespace MVCMontadoraPP.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Vendedor_Venda,Cliente_Venda,Peca_Venda,Quantidade_Venda,ValorUnit_Venda,ValorFinal_Venda")] Venda venda)
+        public async Task<IActionResult> Create([Bind("ID,Vendedor_Venda,Cliente_Venda,Peca_Venda,Quantidade_Venda,ValorUnit_Venda,ValorFinal_Venda,DataCadastroVenda")] Venda venda)
         {
+            venda.DataCadastroVenda = DateTime.Now;
             if (ModelState.IsValid)
             {
                 _context.Add(venda);
@@ -86,7 +87,7 @@ namespace MVCMontadoraPP.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Vendedor_Venda,Cliente_Venda,Peca_Venda,Quantidade_Venda,ValorUnit_Venda,ValorFinal_Venda")] Venda venda)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Vendedor_Venda,Cliente_Venda,Peca_Venda,Quantidade_Venda,ValorUnit_Venda,ValorFinal_Venda,DataCadastroVenda")] Venda venda)
         {
             if (id != venda.ID)
             {

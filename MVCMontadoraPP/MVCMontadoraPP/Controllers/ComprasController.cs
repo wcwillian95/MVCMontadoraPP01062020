@@ -46,7 +46,6 @@ namespace MVCMontadoraPP.Controllers
         // GET: Compras/Create
         public IActionResult Create()
         {
-            ViewBag.Fornecedor = _context.Fornecedor.ToList();
             return View();
         }
 
@@ -55,9 +54,9 @@ namespace MVCMontadoraPP.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Peca_Compra,Fornecedor_Compra,Quantidade_Compra,ValorUnitatio_Compra,ValorTotal_Compra")] Compra compra)
+        public async Task<IActionResult> Create([Bind("Id,Peca_Compra,Fornecedor_Compra,Quantidade_Compra,ValorUnitatio_Compra,ValorTotal_Compra,DataCadastroCompra")] Compra compra)
         {
-
+            compra.DataCadastroCompra = DateTime.Now;
             if (ModelState.IsValid)
             {
                 _context.Add(compra);
@@ -88,7 +87,7 @@ namespace MVCMontadoraPP.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Peca_Compra,Fornecedor_Compra,Quantidade_Compra,ValorUnitatio_Compra,ValorTotal_Compra")] Compra compra)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Peca_Compra,Fornecedor_Compra,Quantidade_Compra,ValorUnitatio_Compra,ValorTotal_Compra,DataCadastroCompra")] Compra compra)
         {
             if (id != compra.Id)
             {

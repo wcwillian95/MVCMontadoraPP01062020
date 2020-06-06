@@ -7,6 +7,8 @@
   <ItemGroup>
     <Compile Remove="Migrations\20200505015025_Initial-Create.cs" />
     <Compile Remove="Migrations\20200505015025_Initial-Create.Designer.cs" />
+    <Compile Remove="Migrations\MVCMontadoraPP\20200606011114_05062020.cs" />
+    <Compile Remove="Migrations\MVCMontadoraPP\20200606011114_05062020.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

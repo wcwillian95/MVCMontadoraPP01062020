@@ -54,8 +54,9 @@ namespace MVCMontadoraPP.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Nome_Fornecedor,CNPJ_Fornecedor,Contato_Fornecedor,Email_Fornecedor,CEP_Fornecedor,Rua_Fornecedor,Bairro_Fornecedor,Cidade_Fornecedor,Estado_Fornecedor")] Fornecedor fornecedor)
+        public async Task<IActionResult> Create([Bind("ID,Nome_Fornecedor,CNPJ_Fornecedor,Contato_Fornecedor,Email_Fornecedor,CEP_Fornecedor,Rua_Fornecedor,Bairro_Fornecedor,Cidade_Fornecedor,Estado_Fornecedor,DataCadastroFornecedor")] Fornecedor fornecedor)
         {
+            fornecedor.DataCadastroFornecedor = DateTime.Now;
             if (ModelState.IsValid)
             {
                 _context.Add(fornecedor);
@@ -86,7 +87,7 @@ namespace MVCMontadoraPP.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Nome_Fornecedor,CNPJ_Fornecedor,Contato_Fornecedor,Email_Fornecedor,CEP_Fornecedor,Rua_Fornecedor,Bairro_Fornecedor,Cidade_Fornecedor,Estado_Fornecedor")] Fornecedor fornecedor)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Nome_Fornecedor,CNPJ_Fornecedor,Contato_Fornecedor,Email_Fornecedor,CEP_Fornecedor,Rua_Fornecedor,Bairro_Fornecedor,Cidade_Fornecedor,Estado_Fornecedor,DataCadastroFornecedor")] Fornecedor fornecedor)
         {
             if (id != fornecedor.ID)
             {

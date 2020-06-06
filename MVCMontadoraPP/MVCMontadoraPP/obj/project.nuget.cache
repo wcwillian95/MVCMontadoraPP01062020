@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ACoSHwPLazW8pkq1UgA1v1KCJ8cJEFpHUK/8rb0xnr9U70gILFbxMKwYUHPEnhqGX/0TVQ+GJeD9aLIVQqS9lA==",
+  "dgSpecHash": "fu4SOLhxx8BfL1AR7qQdgxM7fpnnGosIxYaA2pwIuliq9w8HHRVGnTDWa1VziQWKYzUb54HwfznOsJyyYAbWrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wcwil\\Desktop\\PPMontadoraMVC\\MVCMontadoraPP\\MVCMontadoraPP\\MVCMontadoraPP.csproj",
+  "projectFilePath": "C:\\Users\\wcwil\\Desktop\\Pratica Profissional\\PPMontadoraMVC\\MVCMontadoraPP\\MVCMontadoraPP\\MVCMontadoraPP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wcwil\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.2\\microsoft.aspnetcore.cryptography.internal.3.1.2.nupkg.sha512",
     "C:\\Users\\wcwil\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.2\\microsoft.aspnetcore.cryptography.keyderivation.3.1.2.nupkg.sha512",

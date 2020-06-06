@@ -22,5 +22,7 @@ namespace MVCMontadoraPP.Models
         [Display(Name = "Total")]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal ValorTotal_Compra { get; set; }
+        [Display(Name = "Data de Cadastro")]
+        public DateTime DataCadastroCompra { get; set; }
     }
 }

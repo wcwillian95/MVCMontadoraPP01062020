@@ -26,7 +26,6 @@ namespace MVCMontadoraPP.Views.Compras
 
         [BindProperty]
         public Compra Compra { get; set; }
-        public Fornecedor Fornecedor { get; set; }
 
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://aka.ms/RazorPagesCRUD.

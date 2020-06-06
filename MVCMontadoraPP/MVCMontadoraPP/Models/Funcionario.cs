@@ -15,6 +15,9 @@ namespace MVCMontadoraPP.Models
         public string Cargo_Funcionario { get; set; }
         [Display(Name = "CPF")]
         public string CPF_Funcionario { get; set; }
+        [Display(Name = "Data de Nascimento")]
+        [DataType(DataType.Date)]
+        public DateTime DataNascimento_Funcionario { get; set; }
         [Display(Name = "Telefone")]
         public string Contato_Funcionario { get; set; }
         [Display(Name = "Celular")]
@@ -31,5 +34,7 @@ namespace MVCMontadoraPP.Models
         public string Cidade_Funcionario { get; set; }
         [Display(Name = "Estado")]
         public string Estado_Funcionario { get; set; }
+        [Display(Name = "Data de Cadastro")]
+        public DateTime DataCadastroFuncionario { get; set; }
     }
 }

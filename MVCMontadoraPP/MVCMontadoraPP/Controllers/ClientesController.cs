@@ -56,8 +56,9 @@ namespace MVCMontadoraPP.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Nome_Cliente,CPF_Cliente,Contato_Cliente,Contatodois_Cliente,Email_Cliente,CEP_Cliente,Rua_Cliente,Bairro_Cliente,Cidade_Cliente,Estado_Cliente")] Cliente cliente)
+        public async Task<IActionResult> Create([Bind("ID,Nome_Cliente,CPF_Cliente,DataNascimento_Cliente,Contato_Cliente,Contatodois_Cliente,Email_Cliente,CEP_Cliente,Rua_Cliente,Bairro_Cliente,Cidade_Cliente,Estado_Cliente,DataCadastroCliente")] Cliente cliente)
         {
+            cliente.DataCadastroCliente = DateTime.Now;
             if (ModelState.IsValid)
             {
                 _context.Add(cliente);
@@ -88,7 +89,7 @@ namespace MVCMontadoraPP.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Nome_Cliente,CPF_Cliente,Contato_Cliente,Contatodois_Cliente,Email_Cliente,CEP_Cliente,Rua_Cliente,Bairro_Cliente,Cidade_Cliente,Estado_Cliente")] Cliente cliente)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Nome_Cliente,CPF_Cliente,DataNascimento_Cliente,Contato_Cliente,Contatodois_Cliente,Email_Cliente,CEP_Cliente,Rua_Cliente,Bairro_Cliente,Cidade_Cliente,Estado_Cliente,DataCadastroCliente")] Cliente cliente)
         {
             if (id != cliente.ID)
             {

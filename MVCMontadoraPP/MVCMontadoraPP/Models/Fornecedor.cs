@@ -8,6 +8,9 @@ namespace MVCMontadoraPP.Models
 {
     public class Fornecedor
     {
+        public Fornecedor()
+        {
+        }
         public int ID { get; set; }
         [Display(Name = "Empresa")]
         public string Nome_Fornecedor { get; set; }
@@ -28,5 +31,8 @@ namespace MVCMontadoraPP.Models
         public string Cidade_Fornecedor { get; set; }
         [Display(Name = "Estádo")]
         public string Estado_Fornecedor { get; set; }
+        [Display(Name = "Data de Cadastro")]
+        public DateTime  DataCadastroFornecedor { get; set; }
+
     }
 }

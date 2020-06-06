@@ -54,8 +54,9 @@ namespace MVCMontadoraPP.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Nome_Funcionario,Cargo_Funcionario,CPF_Funcionario,Contato_Funcionario,Contatodois_Funcionario,Email_Funcionario,CEP_Funcionario,Rua_Funcionario,Bairro_Funcionario,Cidade_Funcionario,Estado_Funcionario")] Funcionario funcionario)
+        public async Task<IActionResult> Create([Bind("ID,Nome_Funcionario,Cargo_Funcionario,CPF_Funcionario,DataNascimento_Funcionario,Contato_Funcionario,Contatodois_Funcionario,Email_Funcionario,CEP_Funcionario,Rua_Funcionario,Bairro_Funcionario,Cidade_Funcionario,Estado_Funcionario,DataCadastroFuncionario")] Funcionario funcionario)
         {
+            funcionario.DataCadastroFuncionario = DateTime.Now;
             if (ModelState.IsValid)
             {
                 _context.Add(funcionario);
@@ -86,7 +87,7 @@ namespace MVCMontadoraPP.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Nome_Funcionario,Cargo_Funcionario,CPF_Funcionario,Contato_Funcionario,Contatodois_Funcionario,Email_Funcionario,CEP_Funcionario,Rua_Funcionario,Bairro_Funcionario,Cidade_Funcionario,Estado_Funcionario")] Funcionario funcionario)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Nome_Funcionario,Cargo_Funcionario,CPF_Funcionario,DataNascimento_Funcionario,Contato_Funcionario,Contatodois_Funcionario,Email_Funcionario,CEP_Funcionario,Rua_Funcionario,Bairro_Funcionario,Cidade_Funcionario,Estado_Funcionario,DataCadastroFuncionario")] Funcionario funcionario)
         {
             if (id != funcionario.ID)
             {

@@ -21,16 +21,23 @@ namespace MVCMontadoraPP.Models
         [RegularExpression(@"^[0-9]*$", ErrorMessage = "CPF inválido")]
         [StringLength(11, MinimumLength = 11, ErrorMessage = "Tamanho do CPF inválido")]
         public string CPF_Cliente { get; set; }
+        [Required(ErrorMessage = "Campo obrigatório")]
+        [Display(Name = "Data de Nascimento")]
+        [DataType(DataType.Date)]
+        public DateTime DataNascimento_Cliente { get; set; }
         [Display(Name = "Telefone")]
         [DataType(DataType.Text)]
+        [StringLength(11, MinimumLength = 11, ErrorMessage = "Tamanho do Telefone inválido")]
         public string Contato_Cliente { get; set; }
         [Display(Name = "Celular")]
+        [StringLength(11, MinimumLength = 11, ErrorMessage = "Tamanho do Telefone inválido")]
         [DataType(DataType.Text)]
         public string Contatodois_Cliente { get; set; }
         [Display(Name = "Email")]
         [DataType(DataType.EmailAddress)]
         public string Email_Cliente { get; set; }
         [Display(Name = "CEP")]
+        [StringLength(8, MinimumLength = 8, ErrorMessage = "Tamanho do CEP inválido")]
         [DataType(DataType.Text)]
         public string CEP_Cliente { get; set; }
         [Display(Name = "Rua")]
@@ -45,5 +52,8 @@ namespace MVCMontadoraPP.Models
         [Display(Name = "Estado")]
         [DataType(DataType.Text)]
         public string Estado_Cliente { get; set; }
+        [Display(Name = "Data de Cadastro")]
+
+        public DateTime DataCadastroCliente { get; set; }
     }
 }
