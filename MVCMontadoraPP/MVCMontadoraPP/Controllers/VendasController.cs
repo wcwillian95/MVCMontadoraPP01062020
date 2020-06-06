@@ -20,9 +20,15 @@ namespace MVCMontadoraPP.Controllers
         }
 
         // GET: Vendas
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Venda.ToListAsync());
+            var vendas = from m in _context.Venda
+                           select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                vendas = vendas.Where(s => s.Peca_Venda.Contains(searchString));
+            }
+            return View(await vendas.ToListAsync());
         }
 
         // GET: Vendas/Details/5

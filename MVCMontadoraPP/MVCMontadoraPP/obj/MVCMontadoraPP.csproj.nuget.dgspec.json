@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wcwil\\Desktop\\Pratica Profissional\\PPMontadoraMVC\\MVCMontadoraPP\\MVCMontadoraPP\\MVCMontadoraPP.csproj": {}
+    "C:\\Users\\wcwil\\Desktop\\MontadoraPika-master\\MVCMontadoraPP01062020-master\\MVCMontadoraPP\\MVCMontadoraPP\\MVCMontadoraPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wcwil\\Desktop\\Pratica Profissional\\PPMontadoraMVC\\MVCMontadoraPP\\MVCMontadoraPP\\MVCMontadoraPP.csproj": {
+    "C:\\Users\\wcwil\\Desktop\\MontadoraPika-master\\MVCMontadoraPP01062020-master\\MVCMontadoraPP\\MVCMontadoraPP\\MVCMontadoraPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wcwil\\Desktop\\Pratica Profissional\\PPMontadoraMVC\\MVCMontadoraPP\\MVCMontadoraPP\\MVCMontadoraPP.csproj",
+        "projectUniqueName": "C:\\Users\\wcwil\\Desktop\\MontadoraPika-master\\MVCMontadoraPP01062020-master\\MVCMontadoraPP\\MVCMontadoraPP\\MVCMontadoraPP.csproj",
         "projectName": "MVCMontadoraPP",
-        "projectPath": "C:\\Users\\wcwil\\Desktop\\Pratica Profissional\\PPMontadoraMVC\\MVCMontadoraPP\\MVCMontadoraPP\\MVCMontadoraPP.csproj",
+        "projectPath": "C:\\Users\\wcwil\\Desktop\\MontadoraPika-master\\MVCMontadoraPP01062020-master\\MVCMontadoraPP\\MVCMontadoraPP\\MVCMontadoraPP.csproj",
         "packagesPath": "C:\\Users\\wcwil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wcwil\\Desktop\\Pratica Profissional\\PPMontadoraMVC\\MVCMontadoraPP\\MVCMontadoraPP\\obj\\",
+        "outputPath": "C:\\Users\\wcwil\\Desktop\\MontadoraPika-master\\MVCMontadoraPP01062020-master\\MVCMontadoraPP\\MVCMontadoraPP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wcwil\\AppData\\Roaming\\NuGet\\NuGet.Config",

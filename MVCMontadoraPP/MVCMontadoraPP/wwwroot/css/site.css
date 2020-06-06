@@ -1,20 +1,15 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-}
 
 /* Provide sufficient contrast against white background */
 a {
     color: #0366d6;
 }
-
+/*muda a cor do botao*/
 .btn-primary {
     color: #fff;
-    background-color: #1b6ec2;
+    background-color: ButtonHighlight;
     border-color: #1861ac;
 }
 
@@ -23,6 +18,22 @@ a {
     background-color: #1b6ec2;
     border-color: #1861ac;
 }
+
+.navbar-brand:hover {
+    background-color: deepskyblue;
+    border: 2px solid;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 1.0s;
+    cursor: pointer;
+}
+
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -36,18 +47,6 @@ html {
     }
 }
 
-.border-top {
-    border-top: 1px solid #e5e5e5;
-}
-
-.border-bottom {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
 button.accept-policy {
     font-size: 1rem;
     line-height: inherit;
@@ -59,19 +58,21 @@ html {
     position: relative;
     min-height: 100%;
 }
-
+/*muda a cor do meio */
 body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.footer {
+
+/*muda cor de baixo*/
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
+    font-family: 'Agency FB';
+    line-height: 55px; /* Vertically center the text there */
+    margin-right: auto;
+    background-color: darkgrey;
 }
 
 /*for tab control*/
@@ -87,7 +88,7 @@ div.login-logout-tab li.nav-item {
     width: 50%;
 }
 
-div.login-logout-tab a.nav-link] {
+div.login-logout-tab a.nav-link {
     font-size: 25px;
     color: #495057;
     text-align: center;

@@ -20,9 +20,15 @@ namespace MVCMontadoraPP.Controllers
         }
 
         // GET: Funcionarios
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Funcionario.ToListAsync());
+            var funcionarios = from m in _context.Funcionario
+                               select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                funcionarios = funcionarios.Where(s => s.Nome_Funcionario.Contains(searchString));
+            }
+            return View(await funcionarios.ToListAsync());
         }
 
         // GET: Funcionarios/Details/5

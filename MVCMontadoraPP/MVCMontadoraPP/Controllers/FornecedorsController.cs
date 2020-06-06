@@ -20,9 +20,15 @@ namespace MVCMontadoraPP.Controllers
         }
 
         // GET: Fornecedors
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Fornecedor.ToListAsync());
+            var fornecedores = from m in _context.Fornecedor
+                           select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                fornecedores = fornecedores.Where(s => s.Nome_Fornecedor.Contains(searchString));
+            }
+            return View(await fornecedores.ToListAsync());
         }
 
         // GET: Fornecedors/Details/5

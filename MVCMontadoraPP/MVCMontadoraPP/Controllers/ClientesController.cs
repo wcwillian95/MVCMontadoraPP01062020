@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MVCMontadoraPP.Data;
 using MVCMontadoraPP.Models;
+using MVCMontadoraPP.Models.ModelsPesquisa;
 
 namespace MVCMontadoraPP.Controllers
 {
@@ -22,9 +23,15 @@ namespace MVCMontadoraPP.Controllers
         }
 
         // GET: Clientes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Cliente.ToListAsync());
+            var clientes = from m in _context.Cliente
+                           select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                clientes = clientes.Where(s => s.Nome_Cliente.Contains(searchString));
+            }
+            return View(await clientes.ToListAsync());
         }
 
         // GET: Clientes/Details/5
