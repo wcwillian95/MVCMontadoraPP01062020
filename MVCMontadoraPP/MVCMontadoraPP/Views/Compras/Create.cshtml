@@ -4,12 +4,13 @@
     ViewData["Title"] = "Create";
 }
 
-    <h1>Create</h1>
+    <h1 class="text-center">Criar Pedido</h1>
+<br />
 
-<h4>Compra</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-2"></div>
+    <div class="col-md-6">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -23,35 +24,63 @@
                 <span asp-validation-for="Fornecedor_Compra" class="text-danger"></span>
                 <div class="form-group">
                     <label asp-for="Quantidade_Compra" class="control-label"></label>
-                    <input asp-for="Quantidade_Compra" class="form-control" id="Quantidade" min="0" />
+                    <select asp-for="Quantidade_Compra" class="form-control" id="Quantidade">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
                     <span asp-validation-for="Quantidade_Compra" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="ValorUnitatio_Compra" class="control-label"></label>
-                    <input asp-for="ValorUnitatio_Compra" class="form-control" id="Valor" />
-                    <span asp-validation-for="ValorUnitatio_Compra" class="text-danger"></span>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label asp-for="ValorUnitatio_Compra" class="control-label"></label>
+                        <input asp-for="ValorUnitatio_Compra" class="form-control" id="Valor" />
+                        <span asp-validation-for="ValorUnitatio_Compra" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label asp-for="ValorTotal_Compra" class="control-label"></label>
+                        <input asp-for="ValorTotal_Compra" class="form-control" id="ValorTotal" />
+                        <span asp-validation-for="ValorTotal_Compra" class="text-danger"></span>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label asp-for="ValorTotal_Compra" class="control-label"></label>
-                    <input asp-for="ValorTotal_Compra" type="number" class="form-control" id="ValorTotal" value="0" />
-                    <span asp-validation-for="ValorTotal_Compra" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-primary" />
-                </div>
+            </div>
         </form>
     </div>
 </div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4 form-group">
+        <input type="button" value="  Calcular  " onclick="Total()" class="btn btn-primary" id="Desativar" />
+    </div>
+    <div class="col-md-6 form-group">
+        <input id="btn1" type="submit" value="    Create    " class="btn btn-primary" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-7"></div>
+    <div class="col-md-5">
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
 <script type="text/javascript">
-    var valUnit = document.getElementById("Valor").value;
-    var valQnt = document.getElementById("Quantidade").value;
+    //calcular total
     function Total() {
-        document.getElementById("ValorTotal").innerHTML = valUnit * valQnt;
+        var s1 = document.getElementById("Valor").value;
+        var s2 = document.getElementById("Quantidade").value;
+        s1 = Number(s1);
+        s2 = Number(s2);
+        var s3 = s1 * s2;
+        parseFloat(s3);
+        return document.getElementById("ValorTotal").value = s3;
     }
 </script>
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

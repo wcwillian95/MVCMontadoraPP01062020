@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1LxBCgWLrCeRnhSf8MXMPBGcoQC7S12sLw/1FhbPcn3BtIKx/aNsRd3/zevgZYegMgVbevKL8xHl5GtEqEsB2w==",
+  "dgSpecHash": "atxozgqW7KnlrDZYISLwEWnjAn0RVgn5ZzoN3evRaFeU2VQ36uPvE+ekoxcNQQTdI9jp4P/k2sDMq2ng24Ivfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wcwil\\Desktop\\MontadoraPika-master\\MVCMontadoraPP01062020-master\\MVCMontadoraPP\\MVCMontadoraPP\\MVCMontadoraPP.csproj",
+  "projectFilePath": "C:\\Users\\wcwil\\Desktop\\Pratica Profissional\\PPMontadoraMVC\\MVCMontadoraPP\\MVCMontadoraPP\\MVCMontadoraPP.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\wcwil\\.nuget\\packages\\itextsharp\\5.5.13.1\\itextsharp.5.5.13.1.nupkg.sha512",
     "C:\\Users\\wcwil\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.2\\microsoft.aspnetcore.cryptography.internal.3.1.2.nupkg.sha512",
     "C:\\Users\\wcwil\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.2\\microsoft.aspnetcore.cryptography.keyderivation.3.1.2.nupkg.sha512",
     "C:\\Users\\wcwil\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -176,5 +177,16 @@
     "C:\\Users\\wcwil\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\wcwil\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'iTextSharp 5.5.13.1' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "iTextSharp",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

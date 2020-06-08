@@ -245,9 +245,6 @@ C:\Users\wcwil\Desktop\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\ne
 C:\Users\wcwil\Desktop\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\Razor\Views\Fornecedors\Edit.cshtml.g.cs
 C:\Users\wcwil\Desktop\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\Razor\Views\Fornecedors\Index.cshtml.g.cs
 C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.csprojAssemblyReference.cache
-C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.csproj.CoreCompileInputs.cache
-C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.RazorAssemblyInfo.cache
 C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.RazorAssemblyInfo.cs
 C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.AssemblyInfoInputs.cache
@@ -982,3 +979,7 @@ C:\Users\wcwil\Desktop\MontadoraPika-master\MVCMontadoraPP01062020-master\MVCMon
 C:\Users\wcwil\Desktop\MontadoraPika-master\MVCMontadoraPP01062020-master\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.dll
 C:\Users\wcwil\Desktop\MontadoraPika-master\MVCMontadoraPP01062020-master\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.pdb
 C:\Users\wcwil\Desktop\MontadoraPika-master\MVCMontadoraPP01062020-master\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.genruntimeconfig.cache
+C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.csproj.CoreCompileInputs.cache
+C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\bin\Debug\netcoreapp3.1\itextsharp.dll

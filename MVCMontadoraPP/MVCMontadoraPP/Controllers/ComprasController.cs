@@ -52,6 +52,7 @@ namespace MVCMontadoraPP.Controllers
         // GET: Compras/Create
         public IActionResult Create()
         {
+            ViewBag.Fornecedores = _context.Fornecedor;
             return View();
         }
 

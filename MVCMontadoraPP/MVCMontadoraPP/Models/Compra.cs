@@ -19,7 +19,7 @@ namespace MVCMontadoraPP.Models
         [Display(Name = "Valor")]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal ValorUnitatio_Compra { get; set; }
-        [Display(Name = "Total")]
+        [Display(Name = "Total: R$ ")]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal ValorTotal_Compra { get; set; }
         [Display(Name = "Data de Cadastro")]
