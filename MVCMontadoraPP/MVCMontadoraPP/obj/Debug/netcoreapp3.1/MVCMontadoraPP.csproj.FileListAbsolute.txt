@@ -983,3 +983,4 @@ C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMon
 C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\MVCMontadoraPP.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\bin\Debug\netcoreapp3.1\itextsharp.dll
+C:\Users\wcwil\Desktop\Pratica Profissional\PPMontadoraMVC\MVCMontadoraPP\MVCMontadoraPP\obj\Debug\netcoreapp3.1\Razor\Views\RelatorioPDF\RelatoriosPDF.cshtml.g.cs
